@@ -281,7 +281,7 @@ alert.showAndWait();
     private void cambiarContraseña(ActionEvent event) {
         try {
             Parent root;
-            root = FXMLLoader.load(getClass().getResource("/enki/CambiarContrase�a.fxml"));
+            root = FXMLLoader.load(getClass().getResource("/enki/CambiarContraseña.fxml"));
             Scene scene = new Scene(root);
             Stage stage = new Stage();
             stage.setMinWidth(400);

@@ -79,7 +79,7 @@ public class ValoresEstaticos {
     public static final String modificarEstadoCopiaPHP = "Enki/php/copia/modificarEstadoCopia.php";
     public static final String modificarBibliotecarioPHP = "Enki/php/usuario/modificarBibliotecario.php";
     public static final String modificarEstanteCopiaPHP = "Enki/php/copia/modificarEstanteCopia.php";
-    public static final String modificarContraseñaPHP = "Enki/php/usuario/modificarContrase�a.php";
+    public static final String modificarContraseñaPHP = "Enki/php/usuario/modificarContraseña.php";
     
     
     public static final String modificarEstadoCopia="Enki/php/copia/modificarEstadoCopia.php";

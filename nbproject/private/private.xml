@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/D:/Descargas/Enki_Bibliotecario-master%20(1)/Enki_Bibliotecario-master/src/Controladores/CrearBibliotecarioController.java</file>
+            <file>file:/D:/Descargas/Enki_Bibliotecario-master%20(1)/Enki_Bibliotecario-master/src/Valores/ValoresEstaticos.java</file>
+            <file>file:/D:/Descargas/Enki_Bibliotecario-master%20(1)/Enki_Bibliotecario-master/src/Controladores/CrearPrestamoController.java</file>
+            <file>file:/D:/Descargas/Enki_Bibliotecario-master%20(1)/Enki_Bibliotecario-master/src/Controladores/ListaPrestamosController.java</file>
+            <file>file:/D:/Descargas/Enki_Bibliotecario-master%20(1)/Enki_Bibliotecario-master/src/Controladores/CambiarContraseñaController.java</file>
+            <file>file:/D:/Descargas/Enki_Bibliotecario-master%20(1)/Enki_Bibliotecario-master/src/Controladores/ConexionServidorController.java</file>
+            <file>file:/D:/Descargas/Enki_Bibliotecario-master%20(1)/Enki_Bibliotecario-master/src/Modelo/Libro.java</file>
+            <file>file:/D:/Descargas/Enki_Bibliotecario-master%20(1)/Enki_Bibliotecario-master/src/Controladores/ConfigurarNivelController.java</file>
+            <file>file:/D:/Descargas/Enki_Bibliotecario-master%20(1)/Enki_Bibliotecario-master/src/Controladores/AgregarCopiaController.java</file>
+            <file>file:/D:/Descargas/Enki_Bibliotecario-master%20(1)/Enki_Bibliotecario-master/src/Controladores/MainViewController.java</file>
+            <file>file:/D:/Descargas/Enki_Bibliotecario-master%20(1)/Enki_Bibliotecario-master/src/Controladores/ConfigurarEstanteController.java</file>
+            <file>file:/D:/Descargas/Enki_Bibliotecario-master%20(1)/Enki_Bibliotecario-master/src/Controladores/ConfigurarLibrosController.java</file>
+            <file>file:/D:/Descargas/Enki_Bibliotecario-master%20(1)/Enki_Bibliotecario-master/src/Modelo/PrestamoP.java</file>
+            <file>file:/D:/Descargas/Enki_Bibliotecario-master%20(1)/Enki_Bibliotecario-master/src/Controladores/ModificarBibliotecarioController.java</file>
+            <file>file:/D:/Descargas/Enki_Bibliotecario-master%20(1)/Enki_Bibliotecario-master/src/Controladores/DevolverPrestamoController.java</file>
+            <file>file:/D:/Descargas/Enki_Bibliotecario-master%20(1)/Enki_Bibliotecario-master/src/Controladores/LoginController.java</file>
+            <file>file:/D:/Descargas/Enki_Bibliotecario-master%20(1)/Enki_Bibliotecario-master/src/Controladores/CrearLibroCopiaController.java</file>
+            <file>file:/D:/Descargas/Enki_Bibliotecario-master%20(1)/Enki_Bibliotecario-master/src/Controladores/DetalleCopiaController.java</file>
+        </group>
+    </open-files>
+</project-private>

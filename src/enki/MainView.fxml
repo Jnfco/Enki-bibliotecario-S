@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="600.0" minWidth="1000.0" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controladores.MainViewController">
+   <top>
+      <MenuBar maxWidth="1.7976931348623157E308" BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Archivo">
+            <items>
+              <MenuItem fx:id="menuItemCerrarSesion" mnemonicParsing="false" onAction="#onClick_menuItemCerrarSesion" text="Cerrar Sesión" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Configuración">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Configuración del servidor" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Ayuda">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Acerca de" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="384.0" prefWidth="412.0" BorderPane.alignment="CENTER">
+         <children>
+            <BorderPane fx:id="contenido_View" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="490.0" prefWidth="542.0" style="fx-padding: 10; -fx-border-style: solid inside; -fx-border-width: 2; -fx-border-insets: 5; -fx-border-radius: 5;" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" />
+         </children>
+      </AnchorPane>
+   </center>
+   <padding>
+      <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+   </padding>
+   <left>
+      <VBox prefHeight="565.0" prefWidth="194.0" BorderPane.alignment="CENTER">
+         <children>
+            <GridPane style="-fx-border-style: solid inside; -fx-border-width: 2; -fx-border-insets: 5; -fx-border-radius: 5;">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints vgrow="SOMETIMES" />
+                <RowConstraints vgrow="SOMETIMES" />
+                <RowConstraints vgrow="SOMETIMES" />
+                  <RowConstraints vgrow="SOMETIMES" />
+                  <RowConstraints />
+              </rowConstraints>
+               <children>
+                  <Label fx:id="labelCerrarSesion" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#onClick_labelCerrarSesion" text="Cerrar sesión" textFill="#1702ff" underline="true" GridPane.rowIndex="4">
+                     <GridPane.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </GridPane.margin></Label>
+                  <Label fx:id="labelCargo" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Label" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </GridPane.margin></Label>
+                  <Label fx:id="labelUsuario" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Label" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label fx:id="labelCambiarContraseña" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#cambiarContraseña" text="Cambiar contraseña" textFill="#1702ff" underline="true" GridPane.rowIndex="3">
+                     <GridPane.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <ImageView fx:id="imagen" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" style="fx-padding: 10; -fx-border-style: solid inside; -fx-border-width: 2; -fx-border-insets: 5; -fx-border-radius: 5;" GridPane.halignment="CENTER" GridPane.rowIndex="0" GridPane.valignment="CENTER" />
+               </children>
+            </GridPane>
+            <Accordion maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="536.0" prefWidth="194.0">
+              <panes>
+                <TitledPane animated="false" text="Préstamos">
+                     <content>
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Button fx:id="buttonListarPrestamo" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onClick_buttonListarPrestamo" text="Historial de préstamos" />
+                              <Button fx:id="buttonCrearPrestamo" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onClick_buttonCrearPrestamo" text="Crear préstamo" />
+                              <Button fx:id="buttonDevolucionLibro" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onClick_buttonDevolucionLibro" text="Devolución de Libro" />
+                           </children>
+                        </VBox>
+                     </content>
+                </TitledPane>
+                <TitledPane animated="false" text="Usuarios">
+                     <content>
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Button id="buttonLector" fx:id="buttonLector" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onClick_buttonLector" text="Lector" />
+                              <Button id="buttonBibiotecario" fx:id="buttonBibliotecario" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onActionBibliotecario" text="Bibliotecario" />
+                           </children>
+                        </VBox>
+                     </content>
+                </TitledPane>
+                  <TitledPane animated="false" text="Estantes">
+                     <content>
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Button fx:id="buttonListarEstantes" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onClick_buttonListarEstantes" text="Lista de estantes" />
+                              <Button fx:id="buttonCrearEstante" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onClick_buttonCrearEstante" text="Crear estante" />
+                           </children>
+                        </VBox>
+                     </content>
+                  </TitledPane>
+                <TitledPane animated="false" text="Libros">
+                     <content>
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Button fx:id="buttonListaLibros" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#listaLibros" text="Lista de libros" />
+                              <Button fx:id="buttonCrearLibroCopia" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#crearCopia" text="Nuevo libro" />
+                           </children>
+                        </VBox>
+                     </content>
+                  </TitledPane>
+              </panes>
+            </Accordion>
+         </children>
+      </VBox>
+   </left>
+</BorderPane>

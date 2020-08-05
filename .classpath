@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="dist/Enki.jar"/>
+	<classpathentry kind="lib" path="dist/lib/java-json.jar"/>
+	<classpathentry kind="lib" path="dist/lib/javax.mail.jar"/>
+	<classpathentry kind="lib" path="dist/run630411965/Enki.jar"/>
+	<classpathentry kind="lib" path="dist/run630411965/lib/java-json.jar"/>
+	<classpathentry kind="lib" path="dist/run630411965/lib/javax.mail.jar"/>
+	<classpathentry kind="lib" path="lib/java-json.jar"/>
+	<classpathentry kind="lib" path="lib/javax.mail.jar"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>

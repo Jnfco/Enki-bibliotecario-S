@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="borderPaneAgregarCopia" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="367.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controladores.AgregarCopiaController">
+   <bottom>
+      <HBox alignment="CENTER_RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="341.0" BorderPane.alignment="CENTER_RIGHT">
+         <children>
+            <Button fx:id="buttonGuardar" mnemonicParsing="false" onAction="#guardarCopia" text="Guardar" />
+            <Button fx:id="buttonCancelar" mnemonicParsing="false" onAction="#cancelar" text="Cancelar">
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin></Button>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" />
+         </BorderPane.margin>
+      </HBox>
+   </bottom>
+   <center>
+      <GridPane BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="269.0" minWidth="10.0" prefWidth="127.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="464.0" minWidth="10.0" prefWidth="423.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="labelIsbn" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label text="ISBN:" GridPane.rowIndex="1" />
+            <Label text="Título:" />
+            <Label text="Año de publicación:" GridPane.rowIndex="3" />
+            <Label text="Edición:" GridPane.rowIndex="4" />
+            <Label text="Código Dewey:" GridPane.rowIndex="5" />
+            <Label text="Estado:" GridPane.rowIndex="6" />
+            <Label fx:id="labelTitulo" text="Label" GridPane.columnIndex="1" />
+            <Label fx:id="labelAño" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label fx:id="labelEdicion" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label fx:id="labelCodigo" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <ComboBox fx:id="comboBoxEstado" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="260.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Label text="Estante:" GridPane.rowIndex="7" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nivel:" GridPane.rowIndex="8" />
+            <ComboBox fx:id="comboBoxEstante" maxWidth="1.7976931348623157E308" onAction="#seleccionarEstante" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <ComboBox fx:id="comboBoxNivel" maxWidth="1.7976931348623157E308" onAction="#seleccionarNivel" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <Label text="Autor" GridPane.rowIndex="2" />
+            <Label fx:id="labelAutor" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="5.0" left="10.0" right="10.0" top="10.0" />
+         </BorderPane.margin>
+      </GridPane>
+   </center>
+</BorderPane>

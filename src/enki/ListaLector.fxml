@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="488.0" prefWidth="719.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controladores.ListaLectorController">
+   <center>
+      <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="526.0" prefWidth="635.0" spacing="5.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="43.0" prefWidth="699.0" spacing="10.0">
+               <children>
+                  <TextField fx:id="textFieldBusquedaLector" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="630.0" promptText="Rut lector" />
+                  <Button fx:id="buttonBuscar" mnemonicParsing="false" onAction="#buscarLector" text="Buscar" />
+               </children>
+            </HBox>
+            <HBox>
+               <children>
+                  <Button fx:id="buttonNuevoLector" mnemonicParsing="false" onAction="#onClick_buttonNuevoLector" text="Nuevo Lector" />
+                  <Button fx:id="buttonActualizar" mnemonicParsing="false" onAction="#onClick_buttonActualizar" text="Actualizar tabla">
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" />
+               </padding>
+            </HBox>
+            <TableView fx:id="tableViewLectores" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="415.0" prefWidth="683.0">
+              <columns>
+                <TableColumn fx:id="tableColumnRut" prefWidth="75.0" text="RUT" />
+                <TableColumn fx:id="tableColumnNombre" prefWidth="75.0" text="Nombre" />
+                  <TableColumn fx:id="tableColumnAPaterno" prefWidth="75.0" text="A. Paterno" />
+                  <TableColumn fx:id="tableColumnAMaterno" prefWidth="75.0" text="A. Materno" />
+                  <TableColumn fx:id="tableColumnConfig" prefWidth="75.0" text="Configuración" />
+                  <TableColumn fx:id="tableColumnHabilitado" prefWidth="75.0" text="Habilitado" />
+                  <TableColumn fx:id="tableColumnPrestamos" prefWidth="75.0" text="Préstamos" />
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </TableView>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </BorderPane.margin>
+      </VBox>
+   </center>
+   <bottom>
+      <HBox BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Esta tabla se actualizara en: " />
+            <Label fx:id="labelTimer" text="0" />
+            <Label text=" segundos." />
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="5.0" left="10.0" right="10.0" />
+         </BorderPane.margin>
+      </HBox>
+   </bottom>
+</BorderPane>
